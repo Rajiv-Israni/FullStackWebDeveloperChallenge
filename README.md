@@ -1,26 +1,12 @@
-# Full Stack Web Developer Challenge
-## Task Description
-Your task for this challenge is to create a small search engine comprising of two parts, a web-based user interface and a server component that exposes a REST API which provides search results retrieved from a corpus of text that will be provided to you in `corpus/hemingway.txt`.
+I have Provided 2 folders, searchengine and backend respectively.
 
-Your submission will be evaluated for conforming to the specifications outlined below as well as code quality (maintainability, scalability, performance etc.). You are permitted to use any resources and libraries you wish, however, you should be able to justify design choices in your code.
+The backend folder has corpus file already
 
+First you need to install modules in both frameworks to operate which you do by npm i or npm install.
+Then you need to start both the servers so for that i have configured them in such a way that you run npm start in both the folders and it will start.
 
-## Requirements
-The basic search engine should be capable of the following three operations.
+The backend server runs on 5000 and frontend in 3000, i have also enabled cors headers for that purpose.
 
-1. Given a query consisting of a single word `w`, display the 3 most similar words in the search corpus according to some similarity metric of your choosing. You should return results even if `w` is not in the corpus.
-2. Given a single word `w`, update the search corpus with `w`. The new word `w` should immediately be 
-queryable.
-3. Given a single word `w`, remove **_the most similar word_** to `w` in the corpus from further search results. 
-### User Interface
-The user interface should be a browser-based application developed using your JavaScript web framework of choice. It should support the three aforementioned operations. How this is done is completely up to you. Use your creativity and imagination to create a UI that will set your submission apart!
+I tried multiple algorithms but my approach that i used was fast, also do not open the hemingway.txt file since it will stop the updation part of corpus.
 
-### REST API
-The REST API can be implemented using whatever language and frameworks of your choosing. Again, like the UI, it needs to support the three operations listed above. How you choose to accomplish this task is up to you.
-
-## Deliverables
-To submit your challenge, fork this repository and provide the link to your forked repository.
-You should also update this README to include instructions on how to run your search engine.
-Tests are not mandatory but will be considered bonus points if you provide them.
-
-This challenge should take a day at most. It is not expected to be a production ready application and thus will not be evaluated in such a context.
+Thanks!
